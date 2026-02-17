@@ -1,0 +1,28 @@
+{
+  "name": "copilot-trace",
+  "version": "1.0.0",
+  "description": "Capture GitHub Copilot CLI requests and responses using an HTTP/HTTPS proxy",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "copilot-trace": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "http-mitm-proxy": "^1.1.0",
+    "commander": "^12.0.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

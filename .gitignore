@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Generated certificates (contain private keys)
+certs/
+
+# Trace files (may contain sensitive data)
+traces/*.jsonl
+traces/*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# npm debug logs
+npm-debug.log*
